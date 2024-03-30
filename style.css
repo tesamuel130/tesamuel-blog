@@ -1,0 +1,379 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;    
+}
+
+body{
+    background: #080808;
+    color: #fff;
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url('img/homeEdited.jpg');
+    background-size: cover;
+    background-position: right;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.continer{
+    padding: 10px 10%;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.blog{
+    padding: 0 10px 0 10px;
+    background-color: #ff004f;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.log-header-text{
+    margin-top: 15px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.log-header-text span{
+    color: #ff004f;
+}
+
+.log-header-text i{
+    font-size: 30px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+    text-decoration: dashed;
+}
+
+#home{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 50px;
+    padding-right: 30px;
+}
+
+.home-logo a{
+    color: #fff;
+    font-size: 35px;
+    letter-spacing: 10px;
+}
+
+.cont_link{
+    margin-left: 30px;
+}
+
+.home-logo a i:hover{
+    color: #ff004f;
+    transform: scale(1.2);
+}
+
+/*-------------------------about-----------------------------*/
+#about{
+    padding: 80px 0;
+    color: #ababab;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 35px;
+}
+
+.about-col-1 img{
+    width: 900%;
+    border-radius: 15px;
+}
+
+.about-col-2{
+    flex-basis: 60%;
+}
+
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 100%;
+}
+
+.tab-contentes ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contentes ul li span{
+    color: #ff004f;
+    font-size: 14px;
+}
+
+.tab-contentes{
+    display: none;
+}
+
+.tab-contentes.active-tab{
+    display: block;
+}
+
+/*------------------------------------------------------- services -------------------------------------*/
+
+#services{
+    padding: 30px 0;
+}
+
+.service-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.service-list div{
+    background: rgb(59, 59, 59);
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.service-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.service-list div h1{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.service-list div a{
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.service-list div:hover{
+    color: #080808;
+    background-color: #ff004f;
+    transform: translateY(-10px);
+}
+/*-----------------------------------------------portfolio--------------------------------------------*/
+#portfolio{
+    padding: 50px 0;
+}
+
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.work{
+    background: rgb(59, 59, 59);
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: transform 2s ease;
+}
+
+.work.rotate{
+    display: block;
+    animation: rotateCard 2s forwards; /* Apply the rotation animation */
+}
+  
+@keyframes rotateCard {
+   0% { transform: rotateY(0deg); } /* Start rotation from 0 degrees */
+   100% { transform: rotateY(180deg); } /* Rotate to 180 degrees */
+}
+
+.work-list div img{
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* ----------------------------------contact------------------------------ */
+.content{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.contact-icon h1{
+    font-size: 50px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.f-icons{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    line-height: 35px;
+}
+
+.f-icons a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.f-icons a i{
+    color: #ff004f;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.s-icons{
+    line-height: 60px;
+    letter-spacing: 10px;
+}
+
+.s-icons i{
+    color: #fff;
+    font-size: 25px;
+}
+
+.s-icons i:hover{
+    color: #ff004f;
+    transform: scale(1.2);
+}
+
+.location img{
+    width: 300px;
+    height: 200px;
+}
+
+.message{
+    display: flex;
+    flex-direction: column;
+}
+
+.message input{
+    width: 600px;
+    height: 45px;
+    padding-left: 10px;
+    background-color: rgb(59, 59, 59);
+    border-radius: 5px;
+    border-style: none;
+    color: #fff;
+}
+
+.message textarea{
+    width: 600px;
+    height: 150px;
+    resize: none;
+    padding-left: 10px;
+    padding-top: 10px;
+    background-color: rgb(59, 59, 59);
+    border-radius: 5px;
+    border-style: none;
+    color: #fff;
+}
+
+.message button{
+    width: 150px;
+    height: 40px;
+    color: #fff;
+    background-color: #ff004f;
+    border-radius: 5px;
+    border-style: none;
+}
+
+.message button:hover{
+    color: #080808;
+    background-color: #fff;
+}
+
+.line-het{
+    margin-top: 20px;
+}
+
+/* ------------------------footer------------------------- */
+
+footer{
+    margin-top: 10px;
+    text-align: center;
+    background-color: #ff004f;
+    color: #fff;
+    padding: 15px;
+}

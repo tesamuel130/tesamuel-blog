@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal site</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3d68b6bc01.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="continer">
+            <div class="nav">
+                <div class="log-header-text">
+                    <p>Te<span>Samuel</span></p>
+                    <i class="fa-solid fa-code"></i>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Service</a></li>
+                        <li><a href="#portoflio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li class="blog"><a href="#">BLOG</a></li>
+                    </ul>
+                </nav>
+            </div>            
+        </div>
+        <div id="home">
+            <div class="home-logo">
+                <a class="cont_link" href="#"><i class="fa-brands fa-github"></i></a>
+                <a class="cont_link" href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a class="cont_link" href="#"><i class="fa-brands fa-telegram"></i></a>
+                <a class="cont_link" href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a class="cont_link" href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a class="cont_link" href="#"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </div>
+
+<!--------------------About--------------->
+    <div id="about">
+        <div class="continer">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/samiImg.jpg" alt="Samuel Image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> My name is Samuel Tesfaye, and I am passionated with Programing. With a background in web 
+                        development, I have greet interest for web development. And Through this 
+                        platform, I aim to share my journey, insights, and experiences with you. Welcome to 
+                        my personal site!
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experiance')">Experiance</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contentes active-tab" id="skills">
+                        <ul>
+                            <li><span>Front-End</span><br>web developer/for user interface</li>
+                            <li><span>Front-End Frameworks</span><br>Bootstrap, React, Jquery, Next-Js</li>
+                            <li><span>Back-End</span><br>web developer</li>
+                            <li><span>Back-End Frameworks</span><br>NodeJs, Express</li>
+                            <li><span>DataBase</span><br>Mysql, MongoDb</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contentes" id="experiance">
+                        <ul>
+                            <li><span>2023 - current</span><br>Front-End web developer and UI designer on <b>upwork</b></li>
+                            <li><span>2023 - current</span><br>Back-End web developer on <b>Upword</b></li>
+                            <li><span>2024 - current</span><br>Mobile app developer on <b>Linked In</b></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contentes" id="education">
+                        <ul>
+                            <li><span>2020</span><br>preparatory school</li>
+                            <li><span>2021-current</span><br>Undergraduation student in <b>Addis Ababa university</b> by software engineering</li>
+                            <li><span>2022</span><br>Certified on w3-school by <b>HTML, CSS & JS</b></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!---------------------------------------------  services  --------------------------------------------------->
+    <div id="services">
+        <div class="continer">
+            <h1 class="sub-title">My services</h1>
+            <div class="service-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Frot-End Design</h2>
+                    <p></p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-server"></i>
+                    <h2>Back-End Development</h2>
+                    <p></p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-uikit"></i>
+                    <h2>UI/UX Design</h2>
+                    <p></p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--------------------------------------portfolio------------------------------>
+    <div id="portfolio">
+        <div class="continer">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <div class="front">
+                        <img src="img/mobileApp.jpg" alt="">
+                    </div>
+                    <div class="back">
+                        <p>lasdkjflkajsdfkljasdklfjaskldfjlas;kdfj</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <div class="front">
+                        <img src="img/mobileApp.jpg" alt="">
+                    </div>
+                    <div class="back">
+                        <p>lasdkjflkajsdfkljasdklfjaskldfjlas;kdfj</p>
+                    </div>
+                </div>
+                <div class="work" onclick="showHide()">
+                    <div class="front">
+                        <img src="img/mobileApp.jpg" alt="">
+                    </div>
+                    <div class="back">
+                        <p>lasdkjflkajsdfkljasdklfjaskldfjlas;kdfj</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--  --------------------------------------contacts------------------------ -->
+    <div class="contacts" id="contact">
+        <div class="continer">
+            <div class="content">
+                <div class="contact-icon">
+                    <h1>Contact Me</h1>
+                    <div class="f-icons">
+                        <a href="#"><i class="fa-solid fa-phone"></i>+251 922984980</a>
+                        <a href="#"><i class="fa-solid fa-envelope"></i>samuel.tesfaye@aait.edu.et</a>
+                    </div>
+                    <div class="s-icons">
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <div class="location">
+                        <img src="img/location.png" alt="map of addis ababa">
+                    </div>
+                </div>
+                <div class="message">
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="email" class="line-het" placeholder="Email" required>
+                    <input type="text" class="line-het" pattern="[09], [^8]" placeholder="Phone No.">
+                    <textarea name="message" class="line-het" cols="30" rows="10" placeholder="Enter your text..." required></textarea>
+                    <button class="line-het">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-cont">
+            <p>&copy; 2024. Since from 2024</p>
+          </div>
+    </footer>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
