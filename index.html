@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>personal site</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/coding.png" type="image/x-icon"/>
     <script src="https://kit.fontawesome.com/3d68b6bc01.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -134,27 +135,18 @@
             <h1 class="sub-title">My work</h1>
             <div class="work-list">
                 <div class="work">
-                    <div class="front">
-                        <img src="img/mobileApp.jpg" alt="">
-                    </div>
-                    <div class="back">
-                        <p>lasdkjflkajsdfkljasdklfjaskldfjlas;kdfj</p>
+                    <div class="wrkOn">
+                        <h1>Tinder Clone</h1>
                     </div>
                 </div>
                 <div class="work">
-                    <div class="front">
-                        <img src="img/mobileApp.jpg" alt="">
-                    </div>
-                    <div class="back">
-                        <p>lasdkjflkajsdfkljasdklfjaskldfjlas;kdfj</p>
+                    <div class="wrkTw">
+                        <h1>Omegle Clone</h1>
                     </div>
                 </div>
-                <div class="work" onclick="showHide()">
-                    <div class="front">
-                        <img src="img/mobileApp.jpg" alt="">
-                    </div>
-                    <div class="back">
-                        <p>lasdkjflkajsdfkljasdklfjaskldfjlas;kdfj</p>
+                <div class="work">
+                    <div class="wrkTr">
+                        <h1>Telegram Clone</h1>
                     </div>
                 </div>
             </div>
@@ -184,11 +176,11 @@
                 </div>
                 <div class="message">
                     <h1 class="message-text">Message me!</h1>
-                    <input type="text" placeholder="Full Name" required>
-                    <input type="email" class="line-het" placeholder="Email" required>
-                    <input type="text" class="line-het" pattern="[09], [^8]" placeholder="Phone No.">
-                    <textarea name="message" class="line-het" cols="30" rows="10" placeholder="Enter your text..." required></textarea>
-                    <button class="line-het">Submit</button>
+                    <input id="sender_name" type="text" placeholder="Full Name" required>
+                    <input id="sender_add" type="email" class="line-het" placeholder="Email" required>
+                    <input id="phone_no" type="text" class="line-het" pattern="[09], [^8]" placeholder="Phone No.">
+                    <textarea id="message" name="message" class="line-het" cols="30" rows="10" placeholder="Enter your text..." required></textarea>
+                    <button onclick="sendMessage()" class="line-het">Submit</button>
                 </div>
             </div>
         </div>
