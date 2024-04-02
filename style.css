@@ -15,7 +15,7 @@ body{
     height: 100vh;
     background-image: url('img/homeEdited.jpg');
     background-size: cover;
-    background-position: right;
+    background-position: center;
 
     display: flex;
     flex-direction: column;
@@ -25,6 +25,7 @@ body{
 .continer{
     padding: 10px 10%;
 }
+
 
 .nav{
     display: flex;
@@ -110,6 +111,68 @@ nav ul li a:hover::after{
 .home-logo a i:hover{
     color: #ff004f;
     transform: scale(1.2);
+}
+
+.checkbtn{
+    color: #fff;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+@media(max-width: 600px){
+    .home-logo{
+        display: none;
+    }
+
+
+    .checkbtn{
+        display: block;
+        margin-top: -10px;
+        position: fixed;
+    }
+
+
+    .navul{
+        position: fixed;
+        width: 50%;
+        height: 100vh;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        box-shadow: #ff004f;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+        color: black;
+    }
+
+    a:hover, a.active{
+        background: none;
+        color: #fff;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
 }
 
 /*-------------------------about-----------------------------*/
@@ -223,11 +286,13 @@ nav ul li a:hover::after{
     margin-bottom: 15px;
 }
 
-.service-list div a{
+.service-list div p{
     text-decoration: none;
-    color: black;
+    color: #fff;
     font-size: 12px;
     margin-top: 20px;
+    margin-left: 30px;
+    line-height: 20px;
     display: inline-block;
 }
 
@@ -274,9 +339,8 @@ nav ul li a:hover::after{
 
 /* ----------------------------------contact------------------------------ */
 .content{
-    display: flex;
-    justify-content: space-between;
-
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .contact-icon h1{
@@ -328,6 +392,10 @@ nav ul li a:hover::after{
     flex-direction: column;
 }
 
+.message-text{
+    display: none;
+}
+
 .message input{
     width: 600px;
     height: 45px;
@@ -366,6 +434,33 @@ nav ul li a:hover::after{
 
 .line-het{
     margin-top: 20px;
+}
+
+@media(max-width: 600px){
+    .location img{
+        width: 400px;
+        height: 300px;
+    }
+
+    .message{
+        margin-top: 50px;
+    }
+
+    .message-text{
+        display: block;
+        font-size: 40px;
+        font-weight: 600;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+
+    .message input {
+        width: 400px;
+    }
+
+    .message textarea{
+        width: 400px;
+    }
 }
 
 /* ------------------------footer------------------------- */

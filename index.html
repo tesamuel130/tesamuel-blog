@@ -10,18 +10,23 @@
 </head>
 <body>
     <div id="header">
-        <div class="continer">
+        <div class="continer nav-container">
             <div class="nav">
                 <div class="log-header-text">
                     <p>Te<span>Samuel</span></p>
                     <i class="fa-solid fa-code"></i>
                 </div>
                 <nav>
-                    <ul>
+                    <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn">
+                    <i class="fa fa-bars"></i>
+                    </label>
+
+                    <ul class="navul">
                         <li><a href="#">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#services">Service</a></li>
-                        <li><a href="#portoflio">Portfolio</a></li>
+                        <li><a href="#portfolio">My work</a></li>
                         <li><a href="#contact">Contact</a></li>
                         <li class="blog"><a href="#">BLOG</a></li>
                     </ul>
@@ -30,12 +35,12 @@
         </div>
         <div id="home">
             <div class="home-logo">
-                <a class="cont_link" href="#"><i class="fa-brands fa-github"></i></a>
-                <a class="cont_link" href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                <a class="cont_link" href="#"><i class="fa-brands fa-telegram"></i></a>
-                <a class="cont_link" href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a class="cont_link" href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a class="cont_link" href="#"><i class="fa-solid fa-envelope"></i></a>
+                <a class="cont_link" href="https://github.com/tesamuel070"><i class="fa-brands fa-github"></i></a>
+                <a class="cont_link" href="https://twitter.com/tesamuel130"><i class="fa-brands fa-x-twitter"></i></a>
+                <a class="cont_link" href="https://t.me/@JonSamiHappiness21"><i class="fa-brands fa-telegram"></i></a>
+                <a class="cont_link" href="https://www.facebook.com/Samuel Tesfaye"><i class="fa-brands fa-facebook"></i></a>
+                <a class="cont_link" href="https://www.instagram.com/wthst130"><i class="fa-brands fa-instagram"></i></a>
+                <a class="cont_link" href="mailto:samuel.tesfaye@aait.edu.et"><i class="fa-solid fa-envelope"></i></a>
             </div>
         </div>
     </div>
@@ -95,20 +100,29 @@
                 <div>
                     <i class="fa-solid fa-code"></i>
                     <h2>Frot-End Design</h2>
-                    <p></p>
-                    <a href="#">learn more</a>
+                    <p>
+                        <li>Web Site</li>
+                        <li>Mobile App</li>
+                        <li>Computer software</li>
+                    </p>
                 </div>
                 <div>
                     <i class="fa-solid fa-server"></i>
                     <h2>Back-End Development</h2>
-                    <p></p>
-                    <a href="#">learn more</a>
+                    <p>
+                        <li>Web Site</li>
+                        <li>Mobile App</li>
+                        <li>Computer software</li>
+                    </p>
                 </div>
                 <div>
                     <i class="fa-brands fa-uikit"></i>
                     <h2>UI/UX Design</h2>
-                    <p></p>
-                    <a href="#">learn more</a>
+                    <p>
+                        <li>Web Site</li>
+                        <li>Mobile App</li>
+                        <li>Computer software</li>
+                    </p>
                 </div>
             </div>
         </div>
@@ -154,21 +168,22 @@
                 <div class="contact-icon">
                     <h1>Contact Me</h1>
                     <div class="f-icons">
-                        <a href="#"><i class="fa-solid fa-phone"></i>+251 922984980</a>
-                        <a href="#"><i class="fa-solid fa-envelope"></i>samuel.tesfaye@aait.edu.et</a>
+                        <a href="tel:+251922984980"><i class="fa-solid fa-phone"></i>+251 922984980</a>
+                        <a href="mailto:samuel.tesfaye@aait.edu.et"><i class="fa-solid fa-envelope"></i>samuel.tesfaye@aait.edu.et</a>
                     </div>
                     <div class="s-icons">
-                        <a href="#"><i class="fa-brands fa-github"></i></a>
-                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-telegram"></i></a>
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/tesamuel070"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://twitter.com/tesamuel130"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://t.me/@JonSamiHappiness21"><i class="fa-brands fa-telegram"></i></a>
+                        <a href="https://www.facebook.com/Samuel Tesfaye"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/wthst130"><i class="fa-brands fa-instagram"></i></a>
                     </div>
                     <div class="location">
                         <img src="img/location.png" alt="map of addis ababa">
                     </div>
                 </div>
                 <div class="message">
+                    <h1 class="message-text">Message me!</h1>
                     <input type="text" placeholder="Full Name" required>
                     <input type="email" class="line-het" placeholder="Email" required>
                     <input type="text" class="line-het" pattern="[09], [^8]" placeholder="Phone No.">
